@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
 import Image from 'next/image'
+import { MotionDiv } from './FramerUtils';
 
 const Schedule = () => {
     return (
@@ -27,7 +27,7 @@ const UpNextCard = ({extraClasses, image, name}: UpNextCardProps) => {
 
 
     return (
-        <motion.div whileInView={{ opacity: 1 }} initial={{ opacity: 0 }}  className={`snap-start min-w-[100%] lg:min-w-auto inline-flex lg:flex gap-3 items-center p-2 px-6 ${extraClasses}`}>
+        <MotionDiv whileInView={{ opacity: 1 }} initial={{ opacity: 0 }}  className={`snap-start min-w-[100%] lg:min-w-auto inline-flex lg:flex gap-3 items-center p-2 px-6 ${extraClasses}`}>
             <Image alt="Event Image"
                 src={`/images/${image}`} width={200} height={300} className='w-28 h-28 rounded-full object-cover object-center' />
            <div>
@@ -35,6 +35,6 @@ const UpNextCard = ({extraClasses, image, name}: UpNextCardProps) => {
                 <p className="text-gray-700">Name of show</p>
             <p className="text-gray-700">Now: 18:00 - 19:00</p>
            </div>
-        </motion.div>
+        </MotionDiv>
     );
 }

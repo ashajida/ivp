@@ -1,11 +1,11 @@
 "use client";
 import Col from "@/components/Col";
 import Container from "@/components/Container";
+import { MotionDiv, MotionH2, MotionP } from "@/components/FramerUtils";
 import Hero from "@/components/Hero";
 import NewsCarousel from "@/components/NewsCarousel";
 import Schedule from "@/components/Schedule";
 import SplitGrid from "@/components/SplitGrid";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
@@ -33,22 +33,22 @@ export default function Home() {
               />
             </Col>
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
-              <motion.h2
+              <MotionH2
                 whileInView={{ x: 0, opacity: 1 }}
                 initial={{ x: 500, opacity: 0 }}
                 className="text-4xl font-bold"
               >
                 About IVP
-              </motion.h2>
-              <motion.p
+              </MotionH2>
+              <MotionP
                 whileInView={{ x: 0, opacity: 1 }}
                 initial={{ x: 500, opacity: 0 }}
               >
                 sed e do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi
-              </motion.p>
-              <motion.div
+              </MotionP>
+              <MotionDiv
                 whileInView={{ x: 0, opacity: 1 }}
                 initial={{ x: 500, opacity: 0 }}
               >
@@ -59,7 +59,7 @@ export default function Home() {
                   Read More
                   <MdArrowForward />
                 </Link>
-              </motion.div>
+              </MotionDiv>
             </Col>
           </SplitGrid>
         </Container>

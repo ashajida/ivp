@@ -3,7 +3,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import Image from "next/image";
 import { Navigation } from "swiper/modules";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import NewsCard from "./NewsCard";
