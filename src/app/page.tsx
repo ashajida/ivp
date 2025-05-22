@@ -9,7 +9,7 @@ import SplitGrid from "@/components/SplitGrid";
 import Image from "next/image";
 import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
-
+ 
 export default function Home() {
   return (
     <div>
