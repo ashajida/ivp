@@ -1,5 +1,4 @@
 import OnAir from "./OnAir";
-import GlobeScene from "./spline/GlobeScene";
 
 const Hero = () => {
     return (
