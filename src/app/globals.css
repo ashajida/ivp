@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper-slide:not(.swiper-slide-visible) {
+  opacity: 0.1;
+}
