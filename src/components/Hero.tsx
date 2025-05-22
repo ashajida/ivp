@@ -26,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
         <video
-          playsinline
+          playsInline
           autoPlay
           loop
           muted
