@@ -58,7 +58,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-white cursor-pointer p-2 w-full text-black py-2 px-4 rounded-md"
+          className="bg-white cursor-pointer p-2 ml-auto block text-black py-2 px-4 rounded-md"
         >
           Submit
         </button>

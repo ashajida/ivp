@@ -41,17 +41,17 @@ const Header = () => {
             <li>
               <Link
                 className="text-3xl lg:text-sm text-gray-800 dark:text-white px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                href="/news"
+                href="#about-us"
               >
-                News
+                About Us
               </Link>
             </li>
              <li>
               <Link
                 className="text-3xl lg:text-sm text-gray-800 dark:text-white px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                href="/advertisements"
+                href="#our-mission"
               >
-                Advertisements
+                Our Mission
               </Link>
             </li>
             <li>

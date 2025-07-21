@@ -1,15 +1,13 @@
 "use client";
 import Col from "@/components/Col";
 import Container from "@/components/Container";
-import { MotionDiv, MotionH2, MotionP } from "@/components/FramerUtils";
 import Hero from "@/components/Hero";
 import NewsCarousel from "@/components/NewsCarousel";
 import Schedule from "@/components/Schedule";
 import SplitGrid from "@/components/SplitGrid";
+import SpotifyEmbed from "@/components/SpotifyEmbed";
 import Image from "next/image";
-import Link from "next/link";
-import { MdArrowForward } from "react-icons/md";
- 
+
 export default function Home() {
   return (
     <div>
@@ -20,7 +18,7 @@ export default function Home() {
         </Container>
       </section>
       <NewsCarousel />
-      <section>
+      <section id="about-us">
         <Container>
           <SplitGrid>
             <Col>
@@ -33,17 +31,8 @@ export default function Home() {
               />
             </Col>
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
-              <MotionH2
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-                className="text-4xl font-bold"
-              >
-                About IVP
-              </MotionH2>
-              <MotionP
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-              >
+              <div>About IVP</div>
+              <div>
                 Infinite Visionaries Podcast (IVP) is more than just a podcast
                 station it's a cultural awakening. Born out of a moment of
                 reflection and emotional urgency, IVP was created by a group of
@@ -61,38 +50,26 @@ export default function Home() {
                 over 40 languages spoken across Mozambique, each podcast episode
                 becomes a vessel for cultural memory, celebration, and
                 resistance.
-              </MotionP>
-              <MotionDiv
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-              >
-                <Link
+              </div>
+              <div>
+                {/* <Link
                   href="https://www.instagram.com/ivp/"
                   className="bg-gradient-to-r w-fit bg-transparent text-white underline flex  items-center gap-2 border-1 px-4 py-2 rounded-full"
                 >
                   Read More
                   <MdArrowForward />
-                </Link>
-              </MotionDiv>
+                </Link> */}
+              </div>
             </Col>
           </SplitGrid>
         </Container>
       </section>
-      <section>
+      <section id="our-mission">
         <Container>
           <SplitGrid>
             <Col extraClasses="flex flex-col justify-center gap-4 overflow-hidden">
-              <MotionH2
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: -500, opacity: 0 }}
-                className="text-4xl font-bold"
-              >
-                Our Mission
-              </MotionH2>
-              <MotionP
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: -500, opacity: 0 }}
-              >
+              <div>Our Mission</div>
+              <div>
                 Our mission is to preserve, amplify, and pass down Mozambique’s
                 rich cultural and linguistic heritage through the power of
                 media. We stand against the erasure that colonial history left
@@ -105,21 +82,18 @@ export default function Home() {
                 experiences, we aim to inspire a new generation to take pride in
                 their roots and ensure that our social fabric remains vibrant,
                 connected, and unbroken.
-              </MotionP>
-              <MotionDiv
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-              >
-                <Link
+              </div>
+              <div>
+                {/* <Link
                   href="https://www.instagram.com/ivp/"
                   className="bg-gradient-to-r w-fit bg-transparent text-white underline flex  items-center gap-2 border-1 px-4 py-2 rounded-full"
                 >
                   Read More
                   <MdArrowForward />
-                </Link>
-              </MotionDiv>
+                </Link> */}
+              </div>
             </Col>
-            <Col extraClasses="lg:px-20">
+            <Col extraClasses="lg:px-20 order-first lg:order-last">
               <Image
                 src="/images/img-4.jpg"
                 alt=""
@@ -144,21 +118,12 @@ export default function Home() {
               />
             </Col>
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
-              <MotionH2
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-                className="text-4xl font-bold"
-              >
-                How We Can Help
-              </MotionH2>
-              <MotionP
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-              >
+              <div>How We Can Help</div>
+              <div>
                 Whether you’re part of the Mozambican diaspora, a language
                 lover, a cultural researcher, or simply someone who believes in
                 the power of identity Infinite Visionaries Podcast offers:
-              </MotionP>
+              </div>
               <ul className="list-disc pl-8">
                 <li>
                   Culturally rooted storytelling in native Mozambican languages
@@ -181,18 +146,15 @@ export default function Home() {
                   sake of our future.
                 </li>
               </ul>
-              <MotionDiv
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 500, opacity: 0 }}
-              >
-                <Link
+              <div>
+                {/* <Link
                   href="https://www.instagram.com/ivp/"
                   className="bg-gradient-to-r w-fit bg-transparent text-white underline flex  items-center gap-2 border-1 px-4 py-2 rounded-full"
                 >
                   Read More
                   <MdArrowForward />
-                </Link>
-              </MotionDiv>
+                </Link> */}
+              </div>
             </Col>
           </SplitGrid>
         </Container>
@@ -200,3 +162,4 @@ export default function Home() {
     </div>
   );
 }
+
