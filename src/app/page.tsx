@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import NewsCarousel from "@/components/NewsCarousel";
 import Schedule from "@/components/Schedule";
 import SplitGrid from "@/components/SplitGrid";
-import SpotifyEmbed from "@/components/SpotifyEmbed";
 import Image from "next/image";
 
 export default function Home() {
@@ -31,8 +30,8 @@ export default function Home() {
               />
             </Col>
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
-              <div>About IVP</div>
-              <div>
+              <h2 className="text-2xl">About IVP</h2>
+              <p>
                 Infinite Visionaries Podcast (IVP) is more than just a podcast
                 station it's a cultural awakening. Born out of a moment of
                 reflection and emotional urgency, IVP was created by a group of
@@ -50,7 +49,7 @@ export default function Home() {
                 over 40 languages spoken across Mozambique, each podcast episode
                 becomes a vessel for cultural memory, celebration, and
                 resistance.
-              </div>
+              </p>
               <div>
                 {/* <Link
                   href="https://www.instagram.com/ivp/"
@@ -68,8 +67,8 @@ export default function Home() {
         <Container>
           <SplitGrid>
             <Col extraClasses="flex flex-col justify-center gap-4 overflow-hidden">
-              <div>Our Mission</div>
-              <div>
+              <h2 className="text-2xl">Our Mission</h2>
+              <p>
                 Our mission is to preserve, amplify, and pass down Mozambique’s
                 rich cultural and linguistic heritage through the power of
                 media. We stand against the erasure that colonial history left
@@ -82,7 +81,7 @@ export default function Home() {
                 experiences, we aim to inspire a new generation to take pride in
                 their roots and ensure that our social fabric remains vibrant,
                 connected, and unbroken.
-              </div>
+              </p>
               <div>
                 {/* <Link
                   href="https://www.instagram.com/ivp/"
@@ -95,10 +94,10 @@ export default function Home() {
             </Col>
             <Col extraClasses="lg:px-20 order-first lg:order-last">
               <Image
-                src="/images/img-4.jpg"
+                src="/images/kids-in-africa.jpg"
                 alt=""
                 height={640}
-                width={800}
+                width={969}
                 className="h-96 object-cover object-center"
               />
             </Col>
@@ -110,20 +109,20 @@ export default function Home() {
           <SplitGrid>
             <Col>
               <Image
-                src="/images/img-4.jpg"
+                src="/images/mozambique.jpg"
                 alt=""
-                height={640}
-                width={800}
+                height={322}
+                width={600}
                 className="h-96 object-cover object-center"
               />
             </Col>
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
-              <div>How We Can Help</div>
-              <div>
+              <h2 className="text-2xl">How We Can Help</h2>
+              <p>
                 Whether you’re part of the Mozambican diaspora, a language
                 lover, a cultural researcher, or simply someone who believes in
                 the power of identity Infinite Visionaries Podcast offers:
-              </div>
+              </p>
               <ul className="list-disc pl-8">
                 <li>
                   Culturally rooted storytelling in native Mozambican languages
