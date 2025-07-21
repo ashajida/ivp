@@ -33,12 +33,12 @@ export default function Home() {
               <h2 className="text-2xl">About IVP</h2>
               <p>
                 Infinite Visionaries Podcast (IVP) is more than just a podcast
-                station it's a cultural awakening. Born out of a moment of
+                station it&lsqou;s a cultural awakening. Born out of a moment of
                 reflection and emotional urgency, IVP was created by a group of
                 Mozambican storytellers and changemakers who recognized the
                 fading echoes of our indigenous languages, traditions, and
                 heritage. Inspired by the vibrant multicultural communities
-                we've lived in where diversity is celebrated, yet African voices
+                we&lsqou;ve lived in where diversity is celebrated, yet African voices
                 remain underrepresented we knew it was time to reclaim our
                 narrative.
                 <br></br>
@@ -69,7 +69,7 @@ export default function Home() {
             <Col extraClasses="flex flex-col justify-center gap-4 overflow-hidden">
               <h2 className="text-2xl">Our Mission</h2>
               <p>
-                Our mission is to preserve, amplify, and pass down Mozambique’s
+                Our mission is to preserve, amplify, and pass down Mozambique&lsqou;s
                 rich cultural and linguistic heritage through the power of
                 media. We stand against the erasure that colonial history left
                 behind where even foreign embassies have forgotten our mother
@@ -77,7 +77,7 @@ export default function Home() {
                 of revival.
                 <br /> <br />
                 We believe every language carries a worldview. By spotlighting
-                Mozambique’s diverse dialects, traditions, music, and lived
+                Mozambique&lsqou;s diverse dialects, traditions, music, and lived
                 experiences, we aim to inspire a new generation to take pride in
                 their roots and ensure that our social fabric remains vibrant,
                 connected, and unbroken.
@@ -119,7 +119,7 @@ export default function Home() {
             <Col extraClasses="flex flex-col justify-center lg:px-20 gap-4 overflow-hidden">
               <h2 className="text-2xl">How We Can Help</h2>
               <p>
-                Whether you’re part of the Mozambican diaspora, a language
+                Whether you&lsqou;re part of the Mozambican diaspora, a language
                 lover, a cultural researcher, or simply someone who believes in
                 the power of identity Infinite Visionaries Podcast offers:
               </p>

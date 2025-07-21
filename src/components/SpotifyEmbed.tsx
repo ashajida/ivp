@@ -11,7 +11,7 @@ const SpotifyEmbed = () => {
       const options = {
         uri: "spotify:episode:7makk4oTQel546B0PZlDM5",
       };
-      const callback = (EmbedController: any) => {};
+      const callback = () => {};
       IFrameAPI.createController(embedRef.current, options, callback);
     };
   }, []);
