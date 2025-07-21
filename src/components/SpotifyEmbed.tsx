@@ -1,11 +1,32 @@
-// @ts-nocheck
 "use client";
 
 import { useEffect, useRef } from "react";
 
+interface SpotifyIframeApi {
+  createController: (
+    element: HTMLElement,
+    options: {
+      uri: string;
+      width?: number | string;
+      height?: number | string;
+      playerSize?: "compact" | "large";
+      theme?: "black" | "white";
+      allow?: string;
+    },
+    callback: (controller: SpotifyPlayerController) => void
+  ) => void;
+}
+
+interface SpotifyPlayerController {
+  // Add methods/properties as needed
+  play(): void;
+  pause(): void;
+  // etc.
+}
+
 declare global {
   interface Window {
-    onSpotifyIframeApiReady: (arg: Record<any, any>) => void;
+    onSpotifyIframeApiReady: (SpotifyIframeApi: SpotifyIframeApi) => void;
   }
 }
 
