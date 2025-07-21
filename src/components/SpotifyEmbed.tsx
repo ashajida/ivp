@@ -3,6 +3,12 @@
 
 import { useEffect, useRef } from "react";
 
+declare global {
+  interface Window {
+    onSpotifyIframeApiReady: (arg: Record<any, any>) => void;
+  }
+}
+
 const SpotifyEmbed = () => {
   const embedRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
