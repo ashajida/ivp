@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdClear, MdMenu } from "react-icons/md";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="text-xl dark:text-gray-100">
-            IVP
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={425}
+              height={311}
+              className="w-[125px] h-auto"
+            />
           </Link>
         </div>
         <button className="lg:hidden cursor-pointer" onClick={toggleMenu}>
@@ -41,7 +48,7 @@ const Header = () => {
             <li>
               <Link
                 className="text-3xl lg:text-sm text-gray-800 dark:text-white px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                href="#about-us"
+                href="/about-us"
               >
                 About Us
               </Link>
@@ -49,7 +56,7 @@ const Header = () => {
              <li>
               <Link
                 className="text-3xl lg:text-sm text-gray-800 dark:text-white px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                href="#our-mission"
+                href="/our-mission"
               >
                 Our Mission
               </Link>
