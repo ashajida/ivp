@@ -34,19 +34,21 @@ export default function OurMission() {
                   pride in their roots and ensure that our social fabric remains
                   vibrant, connected, and unbroken.
                 </p>
-                <h3 className="mb-5 text-[18px]">Rebuilding Cultural </h3>
+                <h3 className="mb-5 text-[18px]">
+                  Rebuilding Cultural Confidence
+                </h3>
                 <p>
-                  Confidence At the heart of our mission is the restoration of
-                  confidence in our cultural identity. For far too long, African
-                  traditions and languages have been undervalued or
-                  misrepresented, seen as barriers to progress instead of
-                  bridges to collective strength. We reject this narrative. We
-                  believe that the future of Mozambique is stronger when it
-                  stands firmly on the foundation of its ancestral wisdom,
-                  expressed in the voices of its people. IVP seeks to normalize
-                  and celebrate the use of indigenous languages in everyday
-                  media — not as relics of the past, but as vital components of
-                  who we are today and who we aspire to be tomorrow.
+                  At the heart of our mission is the restoration of confidence
+                  in our cultural identity. For far too long, African traditions
+                  and languages have been undervalued or misrepresented, seen as
+                  barriers to progress instead of bridges to collective
+                  strength. We reject this narrative. We believe that the future
+                  of Mozambique is stronger when it stands firmly on the
+                  foundation of its ancestral wisdom, expressed in the voices of
+                  its people. IVP seeks to normalize and celebrate the use of
+                  indigenous languages in everyday media — not as relics of the
+                  past, but as vital components of who we are today and who we
+                  aspire to be tomorrow.
                 </p>
               </div>
             </Col>
